@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+body {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/3/3f/Kazakh_Ornament_Vector.svg') no-repeat center fixed;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #FFD700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    border: 3px solid #FFD700;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    width: 120px;
+    margin: 10px;
+}
+
+#yesButton {
+    background: linear-gradient(135deg, #008080, #00A693);
+    color: white;
+}
+
+#yesButton:hover {
+    transform: scale(1.2);
+    background: linear-gradient(135deg, #00A693, #20B2AA);
+    box-shadow: 0 0 15px #FFD700;
+}
+
+#noButton {
+    background: linear-gradient(135deg, #8B4513, #CD853F);
+    color: white;
+    position: absolute;
+}
+
+#noButton:hover {
+    transform: translateY(-10px);
+    background: linear-gradient(135deg, #CD853F, #DAA520);
+}

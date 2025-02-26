@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Валентинка </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Менің Валентинім боласың ба? </h1>
+        <p>Сен әлемдегі ең керемет адамсың! 💙</p>
+        <div class="buttons">
+            <button id="yesButton">Иә</button>
+            <button id="noButton">Жоқ</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("yesButton").addEventListener("click", function() {
+            alert("I love you ");
+            window.location.href = "https://your-link-here.com"; // Сюда вставь свою ссылку
+        });
+
+        var noButton = document.getElementById("noButton");
+        noButton.addEventListener("mouseover", function() {
+            var x = Math.random() * (window.innerWidth - 100);
+            var y = Math.random() * (window.innerHeight - 50);
+            noButton.style.left = x + "px";
+            noButton.style.top = y + "px";
+        });
+    </script>
+</body>
+</html>
+
